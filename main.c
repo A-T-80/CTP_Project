@@ -113,69 +113,69 @@ void crop_suggestion (int x, int y, int z)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate tomato.");
+                printf ("Based on the given inputs, it is recommended to cultivate tomato.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate maize.");
+                printf ("Based on the given inputs, it is recommended to cultivate maize.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate pulses.");
+                printf ("Based on the given inputs, it is recommended to cultivate pulses.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate sugarcane.");
+                printf ("Based on the given inputs, it is recommended to cultivate sugarcane.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
         }
         else if (z == 2)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate cucumber.");
+                printf ("Based on the given inputs, it is recommended to cultivate cucumber.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate mustard.");
+                printf ("Based on the given inputs, it is recommended to cultivate mustard.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate litchi.");
+                printf ("Based on the given inputs, it is recommended to cultivate litchi.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate rice.");
+                printf ("Based on the given inputs, it is recommended to cultivate rice.");
             }
         }
         else
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate lemon.");
+                printf ("Based on the given inputs, it is recommended to cultivate lemon.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate gram.");
+                printf ("Based on the given inputs, it is recommended to cultivate gram.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate tomato.");
+                printf ("Based on the given inputs, it is recommended to cultivate tomato.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate banana.");
+                printf ("Based on the given inputs, it is recommended to cultivate banana.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate litchi.");
+                printf ("Based on the given inputs, it is recommended to cultivate litchi.");
             }
         }
     }
@@ -185,69 +185,69 @@ void crop_suggestion (int x, int y, int z)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate millets.");
+                printf ("Based on the given inputs, it is recommended to cultivate millets.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate oilseeds.");
+                printf ("Based on the given inputs, it is recommended to cultivate oilseeds.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate groundnut.");
+                printf ("Based on the given inputs, it is recommended to cultivate groundnut.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate rice.");
+                printf ("Based on the given inputs, it is recommended to cultivate rice.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate cotton.");
+                printf ("Based on the given inputs, it is recommended to cultivate cotton.");
             }
         }
         else if (z == 2)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate sunflower.");
+                printf ("Based on the given inputs, it is recommended to cultivate sunflower.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate jowar.");
+                printf ("Based on the given inputs, it is recommended to cultivate jowar.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate cereals.");
+                printf ("Based on the given inputs, it is recommended to cultivate cereals.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate rice.");
+                printf ("Based on the given inputs, it is recommended to cultivate rice.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate sugarcane.");
+                printf ("Based on the given inputs, it is recommended to cultivate sugarcane.");
             }
         }
         else
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate millets.");
+                printf ("Based on the given inputs, it is recommended to cultivate millets.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate linseed.");
+                printf ("Based on the given inputs, it is recommended to cultivate linseed.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate oilseed.");
+                printf ("Based on the given inputs, it is recommended to cultivate oilseed.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate cereals.");
+                printf ("Based on the given inputs, it is recommended to cultivate cereals.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
         }
     }
@@ -257,69 +257,69 @@ void crop_suggestion (int x, int y, int z)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate tomato.");
+                printf ("Based on the given inputs, it is recommended to cultivate tomato.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate ragi.");
+                printf ("Based on the given inputs, it is recommended to cultivate ragi.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate potato.");
+                printf ("Based on the given inputs, it is recommended to cultivate potato.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate orange.");
+                printf ("Based on the given inputs, it is recommended to cultivate orange.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate mango.");
+                printf ("Based on the given inputs, it is recommended to cultivate mango.");
             }
         }
         else if (z == 2)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate ragi.");
+                printf ("Based on the given inputs, it is recommended to cultivate ragi.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate maize.");
+                printf ("Based on the given inputs, it is recommended to cultivate maize.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate oilseed.");
+                printf ("Based on the given inputs, it is recommended to cultivate oilseed.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate pulses.");
+                printf ("Based on the given inputs, it is recommended to cultivate pulses.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate sugarcane.");
+                printf ("Based on the given inputs, it is recommended to cultivate sugarcane.");
             }
         }
         else
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate jowar.");
+                printf ("Based on the given inputs, it is recommended to cultivate jowar.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate groundnut.");
+                printf ("Based on the given inputs, it is recommended to cultivate groundnut.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate orange.");
+                printf ("Based on the given inputs, it is recommended to cultivate orange.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate rice.");
+                printf ("Based on the given inputs, it is recommended to cultivate rice.");
             }
         }
     }
@@ -329,69 +329,69 @@ void crop_suggestion (int x, int y, int z)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate barley.");
+                printf ("Based on the given inputs, it is recommended to cultivate barley.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate millet.");
+                printf ("Based on the given inputs, it is recommended to cultivate millet.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate pulses.");
+                printf ("Based on the given inputs, it is recommended to cultivate pulses.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate cotton.");
+                printf ("Based on the given inputs, it is recommended to cultivate cotton.");
             }
         }
         else if (z == 2)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate seasame.");
+                printf ("Based on the given inputs, it is recommended to cultivate seasame.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate mustard.");
+                printf ("Based on the given inputs, it is recommended to cultivate mustard.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate beans.");
+                printf ("Based on the given inputs, it is recommended to cultivate beans.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate maize.");
+                printf ("Based on the given inputs, it is recommended to cultivate maize.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
         }
         else
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate millets.");
+                printf ("Based on the given inputs, it is recommended to cultivate millets.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate bajra.");
+                printf ("Based on the given inputs, it is recommended to cultivate bajra.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate corn.");
+                printf ("Based on the given inputs, it is recommended to cultivate corn.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate peach.");
+                printf ("Based on the given inputs, it is recommended to cultivate peach.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
         }
     }
@@ -401,69 +401,69 @@ void crop_suggestion (int x, int y, int z)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate areca nuts.");
+                printf ("Based on the given inputs, it is recommended to cultivate areca nuts.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate cinchona.");
+                printf ("Based on the given inputs, it is recommended to cultivate cinchona.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate rubber.");
+                printf ("Based on the given inputs, it is recommended to cultivate rubber.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate almonds.");
+                printf ("Based on the given inputs, it is recommended to cultivate almonds.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate cotton.");
+                printf ("Based on the given inputs, it is recommended to cultivate cotton.");
             }
         }
         else if (z == 2)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate coconut.");
+                printf ("Based on the given inputs, it is recommended to cultivate coconut.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate cashew.");
+                printf ("Based on the given inputs, it is recommended to cultivate cashew.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate walnut.");
+                printf ("Based on the given inputs, it is recommended to cultivate walnut.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate coffee.");
+                printf ("Based on the given inputs, it is recommended to cultivate coffee.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate tea.");
+                printf ("Based on the given inputs, it is recommended to cultivate tea.");
             }
         }
         else
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate cinchona.");
+                printf ("Based on the given inputs, it is recommended to cultivate cinchona.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate areca nuts.");
+                printf ("Based on the given inputs, it is recommended to cultivate areca nuts.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate dates.");
+                printf ("Based on the given inputs, it is recommended to cultivate dates.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate cashew.");
+                printf ("Based on the given inputs, it is recommended to cultivate cashew.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate coconut.");
+                printf ("Based on the given inputs, it is recommended to cultivate coconut.");
             }
         }
     }
@@ -473,69 +473,69 @@ void crop_suggestion (int x, int y, int z)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate beans.");
+                printf ("Based on the given inputs, it is recommended to cultivate beans.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate barley.");
+                printf ("Based on the given inputs, it is recommended to cultivate barley.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate wheat.");
+                printf ("Based on the given inputs, it is recommended to cultivate wheat.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate rice.");
+                printf ("Based on the given inputs, it is recommended to cultivate rice.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate tea.");
+                printf ("Based on the given inputs, it is recommended to cultivate tea.");
             }
         }
         else if (z == 2)
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate maize.");
+                printf ("Based on the given inputs, it is recommended to cultivate maize.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate barley.");
+                printf ("Based on the given inputs, it is recommended to cultivate barley.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate blueberry.");
+                printf ("Based on the given inputs, it is recommended to cultivate blueberry.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate apple.");
+                printf ("Based on the given inputs, it is recommended to cultivate apple.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate coffee.");
+                printf ("Based on the given inputs, it is recommended to cultivate coffee.");
             }
         }
         else
         {
             if (y == 1)
             {
-                printf ("Based on the given inputs, is recommended to cultivate beans.");
+                printf ("Based on the given inputs, it is recommended to cultivate beans.");
             }
             else if (y == 2)
             {
-                printf ("Based on the given inputs, is recommended to cultivate capsicum.");
+                printf ("Based on the given inputs, it is recommended to cultivate capsicum.");
             }
             else if (y == 3)
             {
-                printf ("Based on the given inputs, is recommended to cultivate raspberry.");
+                printf ("Based on the given inputs, it is recommended to cultivate raspberry.");
             }
             else if (y == 4)
             {
-                printf ("Based on the given inputs, is recommended to cultivate strawberry.");
+                printf ("Based on the given inputs, it is recommended to cultivate strawberry.");
             }
             else
             {
-                printf ("Based on the given inputs, is recommended to cultivate spices.");
+                printf ("Based on the given inputs, it is recommended to cultivate spices.");
             }
         }
     }
@@ -544,7 +544,6 @@ void crop_suggestion (int x, int y, int z)
 int season_of_cultivation(int x, int y)
 {
     int season;
-    // Will add if-else statements to determine which option is best suited for the trio of x (soil), y (money) and z (season).
 
     printf("Enter the number corresponding to the season you would be cultivating in: ");
     printf ("(1) Monsoon (Kharif)");
