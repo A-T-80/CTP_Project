@@ -25,19 +25,27 @@ int fertilizer(int land_area, int crop_type)
         nitrogen_required_per_sft = 50;
         potassium_required_per_sft = 50;
         phosphorous_required_per_sft = 50;
+        break;
         // printf("%d %d %d", nitrogen_required_per_sft, potassium_required_per_sft, phosphorous_required_per_sft);
     case 2:
         nitrogen_required_per_sft = 60;
         potassium_required_per_sft = 60;
         phosphorous_required_per_sft = 60;
+        break;
     case 3:
         nitrogen_required_per_sft = 70;
         potassium_required_per_sft = 70;
         phosphorous_required_per_sft = 70;
+        break;
     case 4:
         nitrogen_required_per_sft = 80;
         potassium_required_per_sft = 80;
         phosphorous_required_per_sft = 80;
+        break;
+    default:
+        nitrogen_required_per_sft = 50;
+        potassium_required_per_sft = 50;
+        phosphorous_required_per_sft = 50;
     }
     printf("The total fertilizer required for your crop is (in litres): (In N P K order) %d %d %d", nitrogen_required_per_sft * land_area, phosphorous_required_per_sft * land_area, potassium_required_per_sft * land_area);
     printf("Do you wish to calculate the total cost of fertilizer? (y/n)");
@@ -72,12 +80,18 @@ int water(int land_area, int crop_type)
         {
         case 1:
             water_per_sft = 20;
+            break;
         case 2:
             water_per_sft = 30;
+            break;
         case 3:
             water_per_sft = 40;
+            break;
         case 4:
             water_per_sft = 50;
+            break;
+        default:
+            printf("We do not have this crop type in our database, please provide the water needed per sft");
         }
         printf("The total water required for your crop is (in litres): %d", water_per_sft * land_area);
         printf("Do you wish to calculate the total time/cost for water per day? (y/n)");
@@ -102,6 +116,52 @@ int water(int land_area, int crop_type)
             }
         }
         return;
+    }
+}
+
+int harvest(int land_area, int crop_type){
+    int yield_per_sft;
+    switch (crop_type){
+        case 1:
+            yield_per_sft = 30;
+            break;
+        case 2:
+            yield_per_sft = 40;
+            break;
+        case 3:
+            yield_per_sft = 30;
+            break;
+        case 4:
+            yield_per_sft = 40;
+            break;
+        default:
+            printf("We do not have this crop type in our database, please provide the yield per sft");
+            scanf("%d", &yield_per_sft);
+    }
+    printf("The total yield for your farm is %d.", land_area*yield_per_sft);
+    printf("Do you wish to calculate net profit? (y/n)");
+    int response;
+    scanf("%d", &response);
+    if (response == 'y'){
+        int price, seed_price, seed_amount;
+        printf("Enter selling price per ton: ");
+        scanf("%d", &price);
+        printf("Enter seed price per ton: ");
+        scanf("%d", &price);
+        switch(crop_type){
+            case 1:
+                seed_amount = 4;
+            case 2:
+                seed_amount = 5;
+            case 3:
+                seed_amount = 6;
+            case 4:
+                seed_amount = 7;
+            default:
+                printf("We do not have this crop type in our database, please provide the seed required per sft");
+                scanf("%d", &seed_amount);
+        }
+        printf("The net profit will be %d.", ((land_area*yield_per_sft*price) - (land_area*seed_amount*seed_price)));
     }
 }
 
