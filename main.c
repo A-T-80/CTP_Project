@@ -173,6 +173,9 @@ int harvest(int land_area, int crop_type)
 
 void crop_suggestion(int x, int y, int z)
 {
+//     x = soil type
+//     y = financial investment
+//     z = season of cultivation
     if (x == 1)
     {
         if (z == 1)
@@ -609,6 +612,8 @@ void crop_suggestion(int x, int y, int z)
 
 int season_of_cultivation(int x, int y)
 {
+//     x = soil type
+//     y = financial investment
     int season;
 
     printf("Enter the number corresponding to the season you would be cultivating in: ");
@@ -624,6 +629,7 @@ int season_of_cultivation(int x, int y)
 
 void money_investment(int x)
 {
+//     x = soil type
     int season;
     int investment;
 
