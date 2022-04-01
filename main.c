@@ -679,6 +679,62 @@ void type_of_soil()
     money_investment(soil);
 }
 
+
+// List of crops
+// (grouped based on soil type; no repitition here to avoid confusion)
+
+// tomato
+// maize
+// pulses
+// sugarcane
+// wheat
+// cucumber
+// mustard
+// litchi
+// rice
+// lemon
+// gram
+// banana
+
+// millets
+// oilseeds
+// groundnut
+// cotton
+// sunflower
+// jowar
+// cereals
+// linseed
+
+// ragi
+// potato
+// orange
+// mango
+
+// barley
+// seasame
+// beans
+// bajra
+// peach
+
+// areca nuts
+// cinchona
+// rubber
+// almonds
+// coconut
+// cashews
+// walnut
+// coffee
+// tea
+// dates
+
+// blueberry
+// apple
+// capsicum
+// raspberry
+// strawberry
+// spices
+
+
 int main()
 {
     
