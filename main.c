@@ -662,7 +662,6 @@ void money_investment(int x)
 
 void type_of_soil()
 {
-
     int soil;
 
     printf("Enter the number corresponding to the soil you would be cultivating on:");
@@ -679,61 +678,120 @@ void type_of_soil()
     money_investment(soil);
 }
 
+// ___________________________________________________________________________________________________________________________________________________________________
 
 // List of crops
 // (grouped based on soil type; no repitition here to avoid confusion)
 
-// tomato
-// maize
-// pulses
-// sugarcane
-// wheat
+// tomato 
+// maize 
+// pulses 
+// sugarcane 
+// wheat 
 // cucumber
-// mustard
-// litchi
-// rice
-// lemon
-// gram
-// banana
+// mustard 
+// litchi 
+// rice 
+// lemon 
+// gram 
+// banana 
 
-// millets
-// oilseeds
-// groundnut
-// cotton
-// sunflower
-// jowar
-// cereals
-// linseed
+// millets 
+// oilseeds 
+// groundnut 
+// cotton 
+// sunflower 
+// jowar 
+// cereals 
+// linseed 
 
-// ragi
-// potato
-// orange
-// mango
+// ragi 
+// potato 
+// orange 
+// mango 
 
-// barley
-// seasame
-// beans
-// bajra
-// peach
+// barley 
+// seasame 
+// beans 
+// bajra 
+// peach 
 
-// areca nuts
-// cinchona
-// rubber
-// almonds
-// coconut
+// areca nuts 
+// cinchona 
+// rubber 
+// almonds 
+// coconut 
 // cashews
 // walnut
-// coffee
-// tea
-// dates
+// coffee 
+// tea 
+// dates 
 
-// blueberry
+// blueberry 
 // apple
-// capsicum
-// raspberry
+// capsicum 
+// raspberry 
 // strawberry
 // spices
 
+// ____________________________________________________________________________________________________________________________________________________________________
+
+// Grouping of crops for crop_type value
+
+// (1)
+// cucumber
+// millets
+// oilseed
+// linseed
+// seasame
+// peach
+
+// (2)
+// tomato
+// lemon
+// gram
+// jowar
+// ragi
+// beans
+// barley
+// cinchona
+// cashews
+// blueberry
+
+// (3)
+// maize
+// mustard
+// litchi
+// banana
+// groundnut
+// sunflower
+// orange
+// bajra
+// areca nuts
+// almonds
+// walnut
+// dates
+// capsicum
+// raspberry
+
+// (4)
+// pulses
+// sugarcane
+// wheat
+// rice
+// cotton
+// cereals
+// potato
+// mango
+// rubber
+// coconut
+// coffee
+// tea
+// apple
+// strawberry
+// spices
+
+// ____________________________________________________________________________________________________________________________________________________________________
 
 int main()
 {
