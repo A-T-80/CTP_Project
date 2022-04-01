@@ -1,6 +1,20 @@
 // This is the main program for the CTP project
 #include <stdio.h>
 
+market_and_transportaion (int land_area, int crop_type)
+{
+    int market_distance, cost_per_quintal;
+    printf ("Enter the distance (in km) of the nearest marketplace from the land: ");
+    scanf ("%d", &market_distance);
+    printf ("\n");
+
+    printf ("Enter the cost per quintal: ");
+    scanf ("%d", &cost_per_quintal);
+    printf ("\n");
+    
+//     Will complete this once we have the functions of (D) to take the input about machinery (tractors, etc.)
+}
+
 int fertilizer(int land_area, int crop_type)
 {
     int nitrogen, potassium, phosphorous;
