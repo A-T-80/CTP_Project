@@ -15,6 +15,70 @@ market_and_transportaion (int land_area, int crop_type)
 //     Will complete this once we have the functions of (D) to take the input about machinery (tractors, etc.)
 }
 
+void machinery ()
+{
+    int x1, x2, x3;
+
+    printf ("Enter 1 if you posses a ploughing or tilling machine, and 0 if you don't:\n");
+    scanf ("%d", &x1);
+    printf ("\n");
+
+    printf ("Enter 1 if you posses a harvester, and 0 if you don't:\n");
+    scanf ("%d", &x2);
+    printf ("\n");
+
+    printf ("Enter 1 if you posses a water bowser, and 0 if you don't:\n");
+    scanf ("%d", &x3);
+    printf ("\n");
+
+    if (x1 == 0)
+    {
+        printf ("It is advised that you focus more on the effective preparation of the topsoil, and ensure spacing between seeds.\n");
+        printf ("It would be judicious to dedicate adequate time to proper tilling of the soil, in order to get good return on cultivation.\n");
+        printf ("\n");
+    }
+    else
+    {
+        printf ("Proper tilling of the soil isn't a concern for you.\n ");
+        printf ("Just make sure to not over-till the soil in an attempt to make the topsoil as crop-ready as possible.\n");
+        printf ("\n");
+    }
+
+    if (x2 == 0)
+    {
+        printf ("In the absense of a harvester, it becomes very important that you hire a good labour force for the task, in case of a large land area.\n");
+        printf ("In case the harvesting takes multiple days, ensure that the harvested crop is stored properly everyday.\n");
+        printf ("Don't try to rush the harvesting process, as that might negatively impact the qualtiy of the harvest.\n");
+        printf ("\n");
+    }
+    else
+    {
+        printf ("In the presence of a harvester, you wouldn't have to spend any considerable amount of money towards labour for this task.\n");
+        printf ("However, make sure to not use the machine for long intervals of time without breaks.\n");
+        printf ("Doing so might lead to damage due to overheating, or in the worst case, the machine might catch fire too.\n");
+        printf ("Slso ensure that dust and chaff don't accumulate inside the harvester.\n");
+        printf ("\n");
+    }
+
+    if (x3 == 0)
+    {
+        printf ("With respect to fertilizers, the most important thing you will have to be sure of is that you don't over-fertilize the crops.\n");
+        printf ("When manually fertilizing, one has the tendency to injudiciously give the crop more fertilizer than required.\n");
+        printf ("This can have bad effects, in both the short and long term.\n");
+        printf ("Thus, it is advised to thoroughly follow your fertilization plan, and to set up the plan itself very carefully.\n");
+        printf ("\n");
+    }
+    else
+    {
+        printf ("With respect to fertilizers, the water bowser will ensure that no over-fertilization takes place.");
+        printf ("Only thing to note is to not become complacent and always turn on, turn off, and move the bowser around the land at the prescribed time intervals.\n");
+        printf ("\n");
+        printf ("Also try yo make maximum use of the bowser to mninmise irrigation costs.");
+        printf ("And just as with fertilizers, it is necessary to always stay alert when using such impactful machines.\n");
+        printf ("\n");
+    }
+}
+
 int fertilizer(int land_area, int crop_type)
 {
     int nitrogen, potassium, phosphorous;
