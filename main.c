@@ -1,85 +1,85 @@
 // This is the main program for the CTP project
 #include <stdio.h>
 
-market_and_transportaion (int land_area, int crop_type)
+void market_and_transportaion(int land_area, int crop_type)
 {
     int market_distance, cost_per_quintal;
-    printf ("Enter the distance (in km) of the nearest marketplace from the land: ");
-    scanf ("%d", &market_distance);
-    printf ("\n");
+    printf("Enter the distance (in km) of the nearest marketplace from the land: ");
+    scanf("%d", &market_distance);
+    printf("\n");
 
-    printf ("Enter the cost per quintal: ");
-    scanf ("%d", &cost_per_quintal);
-    printf ("\n");
-    
-//     Will complete this once we have the functions of (D) to take the input about machinery (tractors, etc.)
+    printf("Enter the cost per quintal: ");
+    scanf("%d", &cost_per_quintal);
+    printf("\n");
+
+    //     Will complete this once we have the functions of (D) to take the input about machinery (tractors, etc.)
 }
 
-void machinery ()
+void machinery()
 {
     int x1, x2, x3;
 
-    printf ("Enter 1 if you posses a ploughing or tilling machine, and 0 if you don't:\n");
-    scanf ("%d", &x1);
-    printf ("\n");
+    printf("Enter 1 if you posses a ploughing or tilling machine, and 0 if you don't:\n");
+    scanf("%d", &x1);
+    printf("\n");
 
-    printf ("Enter 1 if you posses a harvester, and 0 if you don't:\n");
-    scanf ("%d", &x2);
-    printf ("\n");
+    printf("Enter 1 if you posses a harvester, and 0 if you don't:\n");
+    scanf("%d", &x2);
+    printf("\n");
 
-    printf ("Enter 1 if you posses a water bowser, and 0 if you don't:\n");
-    scanf ("%d", &x3);
-    printf ("\n");
+    printf("Enter 1 if you posses a water bowser, and 0 if you don't:\n");
+    scanf("%d", &x3);
+    printf("\n");
 
     if (x1 == 0)
     {
-        printf ("It is advised that you focus more on the effective preparation of the topsoil, and ensure spacing between seeds.\n");
-        printf ("It would be judicious to dedicate adequate time to proper tilling of the soil, in order to get good return on cultivation.\n");
-        printf ("\n");
+        printf("It is advised that you focus more on the effective preparation of the topsoil, and ensure spacing between seeds.\n");
+        printf("It would be judicious to dedicate adequate time to proper tilling of the soil, in order to get good return on cultivation.\n");
+        printf("\n");
     }
     else
     {
-        printf ("Proper tilling of the soil isn't a concern for you.\n ");
-        printf ("Just make sure to not over-till the soil in an attempt to make the topsoil as crop-ready as possible.\n");
-        printf ("\n");
+        printf("Proper tilling of the soil isn't a concern for you.\n ");
+        printf("Just make sure to not over-till the soil in an attempt to make the topsoil as crop-ready as possible.\n");
+        printf("\n");
     }
 
     if (x2 == 0)
     {
-        printf ("In the absense of a harvester, it becomes very important that you hire a good labour force for the task, in case of a large land area.\n");
-        printf ("In case the harvesting takes multiple days, ensure that the harvested crop is stored properly everyday.\n");
-        printf ("Don't try to rush the harvesting process, as that might negatively impact the qualtiy of the harvest.\n");
-        printf ("\n");
+        printf("In the absense of a harvester, it becomes very important that you hire a good labour force for the task, in case of a large land area.\n");
+        printf("In case the harvesting takes multiple days, ensure that the harvested crop is stored properly everyday.\n");
+        printf("Don't try to rush the harvesting process, as that might negatively impact the qualtiy of the harvest.\n");
+        printf("\n");
     }
     else
     {
-        printf ("In the presence of a harvester, you wouldn't have to spend any considerable amount of money towards labour for this task.\n");
-        printf ("However, make sure to not use the machine for long intervals of time without breaks.\n");
-        printf ("Doing so might lead to damage due to overheating, or in the worst case, the machine might catch fire too.\n");
-        printf ("Slso ensure that dust and chaff don't accumulate inside the harvester.\n");
-        printf ("\n");
+        printf("In the presence of a harvester, you wouldn't have to spend any considerable amount of money towards labour for this task.\n");
+        printf("However, make sure to not use the machine for long intervals of time without breaks.\n");
+        printf("Doing so might lead to damage due to overheating, or in the worst case, the machine might catch fire too.\n");
+        printf("Slso ensure that dust and chaff don't accumulate inside the harvester.\n");
+        printf("\n");
     }
 
     if (x3 == 0)
     {
-        printf ("With respect to fertilizers, the most important thing you will have to be sure of is that you don't over-fertilize the crops.\n");
-        printf ("When manually fertilizing, one has the tendency to injudiciously give the crop more fertilizer than required.\n");
-        printf ("This can have bad effects, in both the short and long term.\n");
-        printf ("Thus, it is advised to thoroughly follow your fertilization plan, and to set up the plan itself very carefully.\n");
-        printf ("\n");
+        printf("With respect to fertilizers, the most important thing you will have to be sure of is that you don't over-fertilize the crops.\n");
+        printf("When manually fertilizing, one has the tendency to injudiciously give the crop more fertilizer than required.\n");
+        printf("This can have bad effects, in both the short and long term.\n");
+        printf("Thus, it is advised to thoroughly follow your fertilization plan, and to set up the plan itself very carefully.\n");
+        printf("\n");
     }
     else
     {
-        printf ("With respect to fertilizers, the water bowser will ensure that no over-fertilization takes place.");
-        printf ("Only thing to note is to not become complacent and always turn on, turn off, and move the bowser around the land at the prescribed time intervals.\n");
-        printf ("\n");
-        printf ("Also try yo make maximum use of the bowser to mninmise irrigation costs.");
-        printf ("And just as with fertilizers, it is necessary to always stay alert when using such impactful machines.\n");
-        printf ("\n");
+        printf("With respect to fertilizers, the water bowser will ensure that no over-fertilization takes place.");
+        printf("Only thing to note is to not become complacent and always turn on, turn off, and move the bowser around the land at the prescribed time intervals.\n");
+        printf("\n");
+        printf("Also try yo make maximum use of the bowser to mninmise irrigation costs.");
+        printf("And just as with fertilizers, it is necessary to always stay alert when using such impactful machines.\n");
+        printf("\n");
     }
 }
 
-int fertilizer(int land_area, int crop_type)
+void fertilizer(int land_area, int crop_type)
 {
     int nitrogen, potassium, phosphorous;
     printf("Enter amount of nitrogen/litre in your fertilizer (Enter 0 for default value): ");
@@ -127,7 +127,7 @@ int fertilizer(int land_area, int crop_type)
     }
     printf("The total fertilizer required for your crop is (in litres): (In N P K order) %d %d %d", nitrogen_required_per_sft * land_area, phosphorous_required_per_sft * land_area, potassium_required_per_sft * land_area);
     printf("Do you wish to calculate the total cost of fertilizer? (y/n)");
-    char p = 'n';
+    char p = 'y';
     scanf("%c", &p);
     if (p == 'y')
     {
@@ -150,55 +150,52 @@ int fertilizer(int land_area, int crop_type)
     }
 }
 
-int water(int land_area, int crop_type)
+void water(int land_area, int crop_type)
 {
+    int water_per_sft;
+    switch (crop_type)
     {
-        int water_per_sft;
-        switch (crop_type)
+    case 1:
+        water_per_sft = 20;
+        break;
+    case 2:
+        water_per_sft = 30;
+        break;
+    case 3:
+        water_per_sft = 40;
+        break;
+    case 4:
+        water_per_sft = 50;
+        break;
+    default:
+        printf("We do not have this crop type in our database, please provide the water needed per sft");
+        scanf("%d", &water_per_sft);
+    }
+    printf("The total water required for your crop is (in litres): %d\n", water_per_sft * land_area);
+    printf("Do you wish to calculate the total time/cost for water per day? (y/n)");
+    char p = 'y';
+    scanf("%c", &p);
+    if (p == 'y')
+    {
+        int need, parameter;
+        printf("Enter t (rate of water) for time taken, or c (cost per litre) for cost: ");
+        scanf("%d %d", &need, &parameter);
+        if (need == 't')
         {
-        case 1:
-            water_per_sft = 20;
-            break;
-        case 2:
-            water_per_sft = 30;
-            break;
-        case 3:
-            water_per_sft = 40;
-            break;
-        case 4:
-            water_per_sft = 50;
-            break;
-        default:
-            printf("We do not have this crop type in our database, please provide the water needed per sft");
-            scanf("%d", &water_per_sft);
+            printf("The time taken per day is: %d hours", (water_per_sft * land_area) / parameter);
         }
-        printf("The total water required for your crop is (in litres): %d", water_per_sft * land_area);
-        printf("Do you wish to calculate the total time/cost for water per day? (y/n)");
-        char p;
-        scanf("%c", &p);
-        if (p == 'y')
+        else if (need == 'c')
         {
-            int need, parameter;
-            printf("Enter t (rate of water) for time taken, or c (cost per litre) for cost: ");
-            scanf("%d %d", &need, &parameter);
-            if (need == 't')
-            {
-                printf("The time taken per day is: %d hours", (water_per_sft * land_area) / parameter);
-            }
-            else if (need == 'c')
-            {
-                printf("The total cost taken per day is: %d rupees", (water_per_sft * land_area) * parameter);
-            }
-            else
-            {
-                printf("Not a valid response, returning to main function.");
-            }
+            printf("The total cost taken per day is: %d rupees", (water_per_sft * land_area) * parameter);
         }
-        return;
+        else
+        {
+            printf("Not a valid response, returning to main function.");
+        }
     }
 }
 
-int harvest(int land_area, int crop_type)
+void harvest(int land_area, int crop_type)
 {
     int yield_per_sft;
     switch (crop_type)
@@ -251,9 +248,9 @@ int harvest(int land_area, int crop_type)
 
 void crop_suggestion(int x, int y, int z)
 {
-//     x = soil type
-//     y = financial investment
-//     z = season of cultivation
+    //     x = soil type
+    //     y = financial investment
+    //     z = season of cultivation
     if (x == 1)
     {
         if (z == 1)
@@ -690,8 +687,8 @@ void crop_suggestion(int x, int y, int z)
 
 int season_of_cultivation(int x, int y)
 {
-//     x = soil type
-//     y = financial investment
+    //     x = soil type
+    //     y = financial investment
     int season;
 
     printf("Enter the number corresponding to the season you would be cultivating in: ");
@@ -707,7 +704,7 @@ int season_of_cultivation(int x, int y)
 
 void money_investment(int x)
 {
-//     x = soil type
+    //     x = soil type
     int season;
     int investment;
 
@@ -747,122 +744,119 @@ void type_of_soil()
 // List of crops
 // (grouped based on soil type; no repitition here to avoid confusion)
 
-// tomato 
-// maize 
-// pulses 
-// sugarcane 
-// wheat 
+// tomato
+// maize
+// pulses
+// sugarcane
+// wheat
 // cucumber
-// mustard 
-// litchi 
-// rice 
-// lemon 
-// gram 
-// banana 
+// mustard
+// litchi
+// rice
+// lemon
+// gram
+// banana
 
-// millets 
-// oilseeds 
-// groundnut 
-// cotton 
-// sunflower 
-// jowar 
-// cereals 
-// linseed 
+// millets
+// oilseeds
+// groundnut
+// cotton
+// sunflower
+// jowar
+// cereals
+// linseed
 
-// ragi 
-// potato 
-// orange 
-// mango 
+// ragi
+// potato
+// orange
+// mango
 
-// barley 
-// seasame 
-// beans 
-// bajra 
-// peach 
+// barley
+// seasame
+// beans
+// bajra
+// peach
 
-// areca nuts 
-// cinchona 
-// rubber 
-// almonds 
-// coconut 
+// areca nuts
+// cinchona
+// rubber
+// almonds
+// coconut
 // cashews
 // walnut
-// coffee 
-// tea 
-// dates 
+// coffee
+// tea
+// dates
 
-// blueberry 
+// blueberry
 // apple
-// capsicum 
-// raspberry 
+// capsicum
+// raspberry
 // strawberry
 // spices
 
 // ____________________________________________________________________________________________________________________________________________________________________
 
-// Grouping of crops for crop_type value
+void crop_type_printer()
+{
 
+    printf("Group 1: \n");
+    printf("Cucumber \n");
+    printf("Millets \n");
+    printf("Oilseed \n");
+    printf("Linseed \n");
+    printf("Sesame \n");
+    printf("Peach \n");
 
-// ____________________________________________________________________________________________________________________________________________________________________
-void crop_type_printer(){
+    printf("\n");
+    printf("Group 2: \n");
+    printf("Tomato \n");
+    printf("Lemon \n");
+    printf("Gram \n");
+    printf("Jowar \n");
+    printf("Ragi \n");
+    printf("Beans \n");
+    printf("Barley \n");
+    printf("Cinchona \n");
+    printf("Cashews\n");
+    printf("Blueberry\n");
 
-printf("Group 1: \n");
-printf("Cucumber \n");
-printf("Millets \n");
-printf("Oilseed \n");
-printf("Linseed \n");
-printf("Sesame \n");
-printf("Peach \n");
+    printf("\n");
+    printf("Group 3: \n");
+    printf("Maize \n");
+    printf("Mustard \n");
+    printf("Litchi\n");
+    printf("Banana \n");
+    printf("Groundnut\n");
+    printf("Sunflower\n");
+    printf("Orange\n");
+    printf("Bajra \n");
+    printf("Areca Nuts\n");
+    printf("Almonds\n");
+    printf("Walnut\n");
+    printf("Dates\n");
+    printf("Capsicum\n");
+    printf("Raspberry\n");
 
-printf("\n");
-printf("Group 2: \n");
-printf("Tomato \n");
-printf("Lemon \n");
-printf("Gram \n");
-printf("Jowar \n");
-printf("Ragi \n");
-printf("Beans \n");
-printf("Barley \n");
-printf("Cinchona \n");
-printf("Cashews\n");
-printf("Blueberry\n");
+    printf("\n");
+    printf("Group 4");
+    printf("Pulses \n");
+    printf("Sugarcane \n");
+    printf("Wheat \n");
+    printf("Rice \n");
+    printf("Cotton \n");
+    printf("Cereals \n");
+    printf("Potato \n");
+    printf("Mango \n");
+    printf("Rubber \n");
+    printf("Coconut \n");
+    printf("Coffee \n");
+    printf("Tea \n");
+    printf("Apple \n");
+    printf("Strawberry \n");
+    printf("Spices \n");
 
-printf("\n");
-printf("Group 3: \n");
-printf("Maize \n");
-printf("Mustard \n");
-printf("Litchi\n");
-printf("Banana \n");
-printf("Groundnut\n");
-printf("Sunflower\n");
-printf("Orange\n");
-printf("Bajra \n");
-printf("Areca Nuts\n");
-printf("Almonds\n");
-printf("Walnut\n");
-printf("Dates\n");
-printf("Capsicum\n");
-printf("Raspberry\n");
-
-printf("\n");
-printf("Group 4");
-printf("Pulses \n");
-printf("Sugarcane \n");
-printf("Wheat \n");
-printf("Rice \n");
-printf("Cotton \n");
-printf("Cereals \n");
-printf("Potato \n");
-printf("Mango \n");
-printf("Rubber \n");
-printf("Coconut \n");
-printf("Coffee \n");
-printf("Tea \n");
-printf("Apple \n");
-printf("Strawberry \n");
-printf("Spices \n");
-
-printf("Group 5: If your crop is not in the list.");
+    printf("Group 5: If your crop is not in the list.");
 }
 
 int main()
@@ -880,88 +874,95 @@ int main()
     int choice, crop_type, land_area;
     scanf("%d", &choice);
     printf("\n");
-    switch (choice){
-        case 1:
-            type_of_soil();
-            break;
-        case 2:
-            printf("Please enter your land area: ");
-            scanf("%d", &land_area);
-            printf("\n");
-            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+    switch (choice)
+    {
+    case 1:
+        type_of_soil();
+        break;
+    case 2:
+        printf("Please enter your land area: ");
+        scanf("%d", &land_area);
+        printf("\n");
+        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        scanf("%d", &crop_type);
+        printf("\n");
+        if (crop_type == 9)
+        {
+            crop_type_printer();
+            printf("Please enter your crop type(1-4):");
             scanf("%d", &crop_type);
-            printf("\n");
-            if (crop_type == 9){
-                crop_type_printer();
-                printf("Please enter your crop type(1-4):");
-                scanf("%d", &crop_type);
-                water(land_area, crop_type);
-            }
-            else{
-                water(land_area, crop_type);
-            }
-            break;
-        case 3:
-            printf("Please enter your land area: ");
-            scanf("%d", &land_area);
-            printf("\n");
-            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+            water(land_area, crop_type);
+        }
+        else
+        {
+            water(land_area, crop_type);
+        }
+        break;
+    case 3:
+        printf("Please enter your land area: ");
+        scanf("%d", &land_area);
+        printf("\n");
+        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        scanf("%d", &crop_type);
+        printf("\n");
+        if (crop_type == 9)
+        {
+            crop_type_printer();
+            printf("Please enter your crop type(1-4):");
             scanf("%d", &crop_type);
-            printf("\n");
-            if (crop_type == 9){
-                crop_type_printer();
-                printf("Please enter your crop type(1-4):");
-                scanf("%d", &crop_type);
-                harvest(land_area, crop_type);
-            }
-            else{
-                harvest(land_area, crop_type);
-            }
-            break;
-        case 4:
-            printf("Please enter your land area: ");
-            scanf("%d", &land_area);
-            printf("\n");
-            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+            harvest(land_area, crop_type);
+        }
+        else
+        {
+            harvest(land_area, crop_type);
+        }
+        break;
+    case 4:
+        printf("Please enter your land area: ");
+        scanf("%d", &land_area);
+        printf("\n");
+        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        scanf("%d", &crop_type);
+        printf("\n");
+        if (crop_type == 9)
+        {
+            crop_type_printer();
+            printf("Please enter your crop type(1-4):");
             scanf("%d", &crop_type);
-            printf("\n");
-            if (crop_type == 9){
-                crop_type_printer();
-                printf("Please enter your crop type(1-4):");
-                scanf("%d", &crop_type);
-                fertilizer(land_area, crop_type);
-            }
-            else{
-                fertilizer(land_area, crop_type);
-            }
-            break;
-        case 5:
-            printf("Please enter your land area: ");
-            scanf("%d", &land_area);
-            printf("\n");
-            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+            fertilizer(land_area, crop_type);
+        }
+        else
+        {
+            fertilizer(land_area, crop_type);
+        }
+        break;
+    case 5:
+        printf("Please enter your land area: ");
+        scanf("%d", &land_area);
+        printf("\n");
+        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        scanf("%d", &crop_type);
+        printf("\n");
+        if (crop_type == 9)
+        {
+            crop_type_printer();
+            printf("Please enter your crop type(1-4):");
             scanf("%d", &crop_type);
-            printf("\n");
-            if (crop_type == 9){
-                crop_type_printer();
-                printf("Please enter your crop type(1-4):");
-                scanf("%d", &crop_type);
-                market_and_transportaion(land_area, crop_type);
-            }
-            else{
-                market_and_transportaion(land_area, crop_type);
-            }
-            break;
-        case 6:
-            machinery();
-            break;
-        case 7:
-            printf("Thank you for using our program");
-            break;
-        default:
-            printf("Not a valid response, please try again. \n");
-            main();
+            market_and_transportaion(land_area, crop_type);
+        }
+        else
+        {
+            market_and_transportaion(land_area, crop_type);
+        }
+        break;
+    case 6:
+        machinery();
+        break;
+    case 7:
+        printf("Thank you for using our program");
+        break;
+    default:
+        printf("Not a valid response, please try again. \n");
+        main();
     }
-
-
 }
