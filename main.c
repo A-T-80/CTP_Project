@@ -802,60 +802,68 @@ void type_of_soil()
 
 // Grouping of crops for crop_type value
 
-// (1)
-// cucumber
-// millets
-// oilseed
-// linseed
-// seasame
-// peach
-
-// (2)
-// tomato
-// lemon
-// gram
-// jowar
-// ragi
-// beans
-// barley
-// cinchona
-// cashews
-// blueberry
-
-// (3)
-// maize
-// mustard
-// litchi
-// banana
-// groundnut
-// sunflower
-// orange
-// bajra
-// areca nuts
-// almonds
-// walnut
-// dates
-// capsicum
-// raspberry
-
-// (4)
-// pulses
-// sugarcane
-// wheat
-// rice
-// cotton
-// cereals
-// potato
-// mango
-// rubber
-// coconut
-// coffee
-// tea
-// apple
-// strawberry
-// spices
 
 // ____________________________________________________________________________________________________________________________________________________________________
+void crop_type_printer(){
+
+printf("Group 1: \n");
+printf("Cucumber \n");
+printf("Millets \n");
+printf("Oilseed \n");
+printf("Linseed \n");
+printf("Sesame \n");
+printf("Peach \n");
+
+printf("\n");
+printf("Group 2: \n");
+printf("Tomato \n");
+printf("Lemon \n");
+printf("Gram \n");
+printf("Jowar \n");
+printf("Ragi \n");
+printf("Beans \n");
+printf("Barley \n");
+printf("Cinchona \n");
+printf("Cashews\n");
+printf("Blueberry\n");
+
+printf("\n");
+printf("Group 3: \n");
+printf("Maize \n");
+printf("Mustard \n");
+printf("Litchi\n");
+printf("Banana \n");
+printf("Groundnut\n");
+printf("Sunflower\n");
+printf("Orange\n");
+printf("Bajra \n");
+printf("Areca Nuts\n");
+printf("Almonds\n");
+printf("Walnut\n");
+printf("Dates\n");
+printf("Capsicum\n");
+printf("Raspberry\n");
+
+printf("\n");
+printf("Group 4");
+printf("Pulses \n");
+printf("Sugarcane \n");
+printf("Wheat \n");
+printf("Rice \n");
+printf("Cotton \n");
+printf("Cereals \n");
+printf("Potato \n");
+printf("Mango \n");
+printf("Rubber \n");
+printf("Coconut \n");
+printf("Coffee \n");
+printf("Tea \n");
+printf("Apple \n");
+printf("Strawberry \n");
+printf("Spices \n");
+
+printf("Group 5: If your crop is not in the list.");
+}
 
 int main()
 {
@@ -866,25 +874,93 @@ int main()
     printf("(3) Yield and Profit calculator\n");
     printf("(4) Fertilizer need and cost calculator\n");
     printf("(5) Selling Assistance\n");
-    printf("(6) Time calculator\n");
+    printf("(6) Farming Advice\n");
+    printf("(7) Exit\n");
     printf("Please choose the option which you would like to go with: ");
-    int choice;
+    int choice, crop_type, land_area;
     scanf("%d", &choice);
+    printf("\n");
     switch (choice){
         case 1:
+            type_of_soil();
             break;
         case 2:
+            printf("Please enter your land area: ");
+            scanf("%d", &land_area);
+            printf("\n");
+            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+            scanf("%d", &crop_type);
+            printf("\n");
+            if (crop_type == 9){
+                crop_type_printer();
+                printf("Please enter your crop type(1-4):");
+                scanf("%d", &crop_type);
+                water(land_area, crop_type);
+            }
+            else{
+                water(land_area, crop_type);
+            }
             break;
         case 3:
+            printf("Please enter your land area: ");
+            scanf("%d", &land_area);
+            printf("\n");
+            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+            scanf("%d", &crop_type);
+            printf("\n");
+            if (crop_type == 9){
+                crop_type_printer();
+                printf("Please enter your crop type(1-4):");
+                scanf("%d", &crop_type);
+                harvest(land_area, crop_type);
+            }
+            else{
+                harvest(land_area, crop_type);
+            }
             break;
         case 4:
+            printf("Please enter your land area: ");
+            scanf("%d", &land_area);
+            printf("\n");
+            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+            scanf("%d", &crop_type);
+            printf("\n");
+            if (crop_type == 9){
+                crop_type_printer();
+                printf("Please enter your crop type(1-4):");
+                scanf("%d", &crop_type);
+                fertilizer(land_area, crop_type);
+            }
+            else{
+                fertilizer(land_area, crop_type);
+            }
             break;
         case 5:
+            printf("Please enter your land area: ");
+            scanf("%d", &land_area);
+            printf("\n");
+            printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+            scanf("%d", &crop_type);
+            printf("\n");
+            if (crop_type == 9){
+                crop_type_printer();
+                printf("Please enter your crop type(1-4):");
+                scanf("%d", &crop_type);
+                market_and_transportaion(land_area, crop_type);
+            }
+            else{
+                market_and_transportaion(land_area, crop_type);
+            }
             break;
         case 6:
+            machinery();
+            break;
+        case 7:
+            printf("Thank you for using our program");
             break;
         default:
-        
+            printf("Not a valid response, please try again. \n");
+            main();
     }
 
 
