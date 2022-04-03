@@ -661,5 +661,33 @@ void type_of_soil()
 
 int main()
 {
-    
+    printf("Welcome to the CTP Project - Per Drop More Crop\n");
+    printf("Our services include: \n");
+    printf("(1) Crop Suggestion\n");
+    printf("(2) Water need and cost calculator\n");
+    printf("(3) Yield and Profit calculator\n");
+    printf("(4) Fertilizer need and cost calculator\n");
+    printf("(5) Selling Assistance\n");
+    printf("(6) Time calculator\n");
+    printf("Please choose the option which you would like to go with: ");
+    int choice;
+    scanf("%d", &choice);
+    switch (choice){
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        default:
+        
+    }
+
+
 }
