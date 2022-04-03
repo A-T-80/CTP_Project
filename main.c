@@ -1,18 +1,42 @@
 // This is the main program for the CTP project
 #include <stdio.h>
 
-void market_and_transportaion(int land_area, int crop_type)
+ void market_and_transportaion(int land_area, int crop_type)
 {
-    int market_distance, cost_per_quintal;
+    int market_distance, market_cost_per_quintal, number_of_quintals;
+    int mileage, local_cost_per_quintal, market_profit, local_profit;
+
     printf("Enter the distance (in km) of the nearest marketplace from the land: ");
     scanf("%d", &market_distance);
     printf("\n");
 
-    printf("Enter the cost per quintal: ");
-    scanf("%d", &cost_per_quintal);
+    printf("Enter the cost of the crop per quintal: ");
+    scanf("%d", &market_cost_per_quintal);
     printf("\n");
 
-    //     Will complete this once we have the functions of (D) to take the input about machinery (tractors, etc.)
+    printf ("Enter the number of quintals of the crop you have harvested: ");
+    scanf ("%d", &number_of_quintals);
+    printf ("\n");
+
+    printf ("Enter the mileage of your mode of trasportation to the market: ");
+    scanf ("%d", &mileage);
+    printf("\n");
+
+    printf ("Enter the cost of the crop per quintal if you sell the harvest to a local distributor: ");
+    scanf ("%d", &local_cost_per_quintal);
+    printf ("\n");
+
+    market_profit = (number_of_quintals * market_cost_per_quintal) - (mileage * market_distance);
+    local_profit = (local_cost_per_quintal * number_of_quintals);
+
+    if (market_profit >= local_profit)
+    {
+        printf ("It is advised to sell your harvest in the market.\n");
+    }
+    else
+    {
+        printf ("It is advised to sell your harvest to a local distributor.\n");
+    }
 }
 
 void machinery()
@@ -70,10 +94,10 @@ void machinery()
     }
     else
     {
-        printf("With respect to fertilizers, the water bowser will ensure that no over-fertilization takes place.");
+        printf("With respect to fertilizers, the water bowser will ensure that no over-fertilization takes place.\n");
         printf("Only thing to note is to not become complacent and always turn on, turn off, and move the bowser around the land at the prescribed time intervals.\n");
         printf("\n");
-        printf("Also try yo make maximum use of the bowser to mninmise irrigation costs.");
+        printf("Also try yo make maximum use of the bowser to mninmise irrigation costs.\n");
         printf("And just as with fertilizers, it is necessary to always stay alert when using such impactful machines.\n");
         printf("\n");
     }
@@ -696,6 +720,8 @@ void crop_suggestion(int x, int y, int z)
             }
         }
     }
+    
+    printf ("\n");
 }
 
 int season_of_cultivation(int x, int y)
@@ -705,9 +731,9 @@ int season_of_cultivation(int x, int y)
     int season;
 
     printf("Enter the number corresponding to the season you would be cultivating in: ");
-    printf("(1) Monsoon (Kharif)");
-    printf("(2) Winter (Rabi)");
-    printf("(3) Summer (Rabi)");
+    printf("(1) Monsoon (Kharif) \n");
+    printf("(2) Winter (Rabi) \n");
+    printf("(3) Summer (Rabi) \n");
     printf("\n");
 
     scanf("%d", &season);
@@ -722,11 +748,11 @@ void money_investment(int x)
     int investment;
 
     printf("Enter the number corresponding to the money bracket which you would be investing per hectare:\n");
-    printf("(1) < Rs. 10,000");
-    printf("(2) Rs. 10,000 - 25,000");
-    printf("(3) Rs. 25,000 - 50,000");
-    printf("(4) Rs. 50,000 - 75,000");
-    printf("(5) > Rs. 75,000");
+    printf("(1) < Rs. 10,000 \n");
+    printf("(2) Rs. 10,000 - 25,000 \n");
+    printf("(3) Rs. 25,000 - 50,000 \n");
+    printf("(4) Rs. 50,000 - 75,000 \n");
+    printf("(5) > Rs. 75,000 \n");
     printf("\n");
 
     scanf("%d", &investment);
@@ -739,12 +765,12 @@ void type_of_soil()
     int soil;
 
     printf("Enter the number corresponding to the soil you would be cultivating on:");
-    printf("(1) Alluvial");
-    printf("(2) Black");
-    printf("(3) Red & Yellow");
-    printf("(4) Arid");
-    printf("(5) Laterite");
-    printf("(6) Mountain & Forest");
+    printf("(1) Alluvial \n");
+    printf("(2) Black \n");
+    printf("(3) Red & Yellow \n");
+    printf("(4) Arid \n");
+    printf("(5) Laterite \n");
+    printf("(6) Mountain & Forest \n");
     printf("\n");
 
     scanf("%d", &soil);
