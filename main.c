@@ -126,10 +126,10 @@ void fertilizer(int land_area, int crop_type)
         phosphorous_required_per_sft = 50;
     }
     printf("The total fertilizer required for your crop is (in litres): (In N P K order) %d %d %d", nitrogen_required_per_sft * land_area, phosphorous_required_per_sft * land_area, potassium_required_per_sft * land_area);
-    printf("Do you wish to calculate the total cost of fertilizer? (y/n)");
-    char p = 'y';
-    scanf("%c", &p);
-    if (p == 'y')
+    printf("Do you wish to calculate the total cost of fertilizer? If yes, type 1, else 0: ");
+    int p;
+    scanf("%d", &p);
+    if (p == 1)
     {
         printf("Enter cost per litre for N P K respectively, or enter 0 0 0 for default value: ");
         int cost_per_litre_n, cost_per_litre_p, cost_per_litre_k;
@@ -146,7 +146,7 @@ void fertilizer(int land_area, int crop_type)
         {
             cost_per_litre_k = 30;
         }
-        printf("Total cost is roughly %d.", (cost_per_litre_n * nitrogen_required_per_sft * land_area + cost_per_litre_p * phosphorous_required_per_sft * land_area + cost_per_litre_k * potassium_required_per_sft * land_area));
+        printf("Total cost is roughly %d.", ((cost_per_litre_n * nitrogen_required_per_sft * land_area) + (cost_per_litre_p * phosphorous_required_per_sft * land_area) + (cost_per_litre_k * potassium_required_per_sft * land_area)));
     }
 }
 
@@ -172,20 +172,28 @@ void water(int land_area, int crop_type)
         scanf("%d", &water_per_sft);
     }
     printf("The total water required for your crop is (in litres): %d\n", water_per_sft * land_area);
-    printf("Do you wish to calculate the total time/cost for water per day? (y/n)");
-    char p = 'y';
-    scanf("%c", &p);
-    if (p == 'y')
+    printf("Do you wish to calculate the total time/cost for water per day? Type 1 if yes, or 0: ");
+    int p;
+    scanf("%d", &p);
+    if (p == 1)
     {
-        int need, parameter;
-        printf("Enter t (rate of water) for time taken, or c (cost per litre) for cost: ");
-        scanf("%d %d", &need, &parameter);
-        if (need == 't')
+        int parameter;
+        int need;
+        printf("Enter 1 for time taken, or 2 for cost: ");
+        scanf("%d", &need);
+        printf("\n");
+        if (need == 1)
         {
+            printf("Enter the rate of water: ");
+            scanf("%d", &parameter);
+            printf("\n");
             printf("The time taken per day is: %d hours", (water_per_sft * land_area) / parameter);
         }
-        else if (need == 'c')
-        {
+        else if (need == 2)
+        {   
+            printf("Enter the cost of water per litre: ");
+            scanf("%d", &parameter);
+            printf("\n");
             printf("The total cost taken per day is: %d rupees", (water_per_sft * land_area) * parameter);
         }
         else
@@ -216,27 +224,32 @@ void harvest(int land_area, int crop_type)
         printf("We do not have this crop type in our database, please provide the yield per sft");
         scanf("%d", &yield_per_sft);
     }
-    printf("The total yield for your farm is %d.", land_area * yield_per_sft);
+    printf("The total yield for your farm is %d kgs", land_area * yield_per_sft);
     printf("Do you wish to calculate net profit? (y/n)");
-    int response;
-    scanf("%d", &response);
-    if (response == 'y')
+    char response[1];
+    scanf("%s", response);
+    if (response[0] == 'y')
     {
+        printf("%d", crop_type);
         int price, seed_price, seed_amount;
         printf("Enter selling price per ton: ");
         scanf("%d", &price);
         printf("Enter seed price per ton: ");
-        scanf("%d", &price);
+        scanf("%d", &seed_price);
         switch (crop_type)
         {
         case 1:
             seed_amount = 4;
+            break;
         case 2:
             seed_amount = 5;
+            break;
         case 3:
             seed_amount = 6;
+            break;
         case 4:
             seed_amount = 7;
+            break;
         default:
             printf("We do not have this crop type in our database, please provide the seed required per sft");
             scanf("%d", &seed_amount);
@@ -839,7 +852,7 @@ void crop_type_printer()
     printf("Raspberry\n");
 
     printf("\n");
-    printf("Group 4");
+    printf("Group 4: \n");
     printf("Pulses \n");
     printf("Sugarcane \n");
     printf("Wheat \n");
@@ -878,12 +891,13 @@ int main()
     {
     case 1:
         type_of_soil();
+        main();
         break;
     case 2:
         printf("Please enter your land area: ");
         scanf("%d", &land_area);
         printf("\n");
-        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        printf("Please enter your crop type(1-5) (Enter 9 to get the list of crop types): ");
         scanf("%d", &crop_type);
         printf("\n");
         if (crop_type == 9)
@@ -897,12 +911,13 @@ int main()
         {
             water(land_area, crop_type);
         }
+        main();
         break;
     case 3:
         printf("Please enter your land area: ");
         scanf("%d", &land_area);
         printf("\n");
-        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        printf("Please enter your crop type(1-5) (Enter 9 to get the list of crop types): ");
         scanf("%d", &crop_type);
         printf("\n");
         if (crop_type == 9)
@@ -916,12 +931,13 @@ int main()
         {
             harvest(land_area, crop_type);
         }
+        main();
         break;
     case 4:
         printf("Please enter your land area: ");
         scanf("%d", &land_area);
         printf("\n");
-        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        printf("Please enter your crop type(1-5) (Enter 9 to get the list of crop types): ");
         scanf("%d", &crop_type);
         printf("\n");
         if (crop_type == 9)
@@ -940,7 +956,7 @@ int main()
         printf("Please enter your land area: ");
         scanf("%d", &land_area);
         printf("\n");
-        printf("Please enter your crop type(1-5): (Enter 9 to get the list of crop types)");
+        printf("Please enter your crop type(1-5) (Enter 9 to get the list of crop types): ");
         scanf("%d", &crop_type);
         printf("\n");
         if (crop_type == 9)
