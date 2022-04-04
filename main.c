@@ -190,7 +190,7 @@ void water(int land_area, int crop_type)
             printf("The time taken per day is: %d hours", (water_per_sft * land_area) / parameter);
         }
         else if (need == 2)
-        {   
+        {
             printf("Enter the cost of water per litre: ");
             scanf("%d", &parameter);
             printf("\n");
