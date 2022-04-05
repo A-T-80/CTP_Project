@@ -919,7 +919,7 @@ void crop_type_printer()
 
 int main()
 {
-    printf("Welcome to the CTP Project - Code, Crop, Cultivate!\n");
+    printf("Welcome to the CTP Project - Crop, Code and Cultivate!\n");
     printf("Our services include: \n");
     printf("(1) Crop Suggestion\n");
     printf("(2) Water need and cost calculator\n");
