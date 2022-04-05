@@ -263,7 +263,7 @@ void harvest(int land_area, int crop_type)
         printf("\n");
     }
     printf("The total yield for your farm is %d kgs\n", land_area * yield_per_sft);
-    printf("Do you wish to calculate net profit? (y/n)");
+    printf("Do you wish to calculate net profit? (y/n) ");
     char response[1];
     scanf("%s", response);
     printf("\n");
@@ -749,7 +749,7 @@ void season_of_cultivation(int x, int y)
     //     y = financial investment
     int season;
 
-    printf("Enter the number corresponding to the season you would be cultivating in: ");
+    printf("Enter the number corresponding to the season you would be cultivating in:\n");
     printf("(1) Monsoon (Kharif) \n");
     printf("(2) Winter (Rabi) \n");
     printf("(3) Summer (Rabi) \n");
@@ -783,7 +783,7 @@ void type_of_soil()
 {
     int soil;
 
-    printf("Enter the number corresponding to the soil you would be cultivating on:");
+    printf("Enter the number corresponding to the soil you would be cultivating on:\n");
     printf("(1) Alluvial \n");
     printf("(2) Black \n");
     printf("(3) Red & Yellow \n");
@@ -968,7 +968,8 @@ int main()
         if (crop_type == 9)
         {
             crop_type_printer();
-            printf("Please enter your crop type(1-4):");
+            printf ("\n");
+            printf("Please enter your crop type(1-4): ");
             scanf("%d", &crop_type);
             harvest(land_area, crop_type);
         }
