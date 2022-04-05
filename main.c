@@ -280,16 +280,16 @@ void harvest(int land_area, int crop_type)
         switch (crop_type)
         {
         case 1:
-            seed_amount = 4;
+            seed_amount = 0.4;
             break;
         case 2:
-            seed_amount = 5;
+            seed_amount = 0.5;
             break;
         case 3:
-            seed_amount = 6;
+            seed_amount = 0.6;
             break;
         case 4:
-            seed_amount = 7;
+            seed_amount = 0.7;
             break;
         default:
             printf("We do not have this crop type in our database, please provide the seed required per sft");
