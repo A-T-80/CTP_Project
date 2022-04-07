@@ -221,7 +221,7 @@ void water(int land_area, int crop_type)
             printf("Enter the rate of water: ");
             scanf("%d", &parameter);
             printf("\n");
-            printf("%d %d %d \n", water_per_sft, land_area, parameter);
+            // printf("%d %d %d \n", water_per_sft, land_area, parameter);
             float ans = ((water_per_sft * land_area) / parameter);
             printf("The time taken per day is: %.2f hours", ans);
             printf("\n");
