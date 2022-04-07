@@ -199,7 +199,7 @@ void water(int land_area, int crop_type)
         water_per_sft = 50;
         break;
     default:
-        printf("We do not have this crop type in our database, please provide the water needed per sft");
+        printf("We do not have this crop type in our database, please provide the water needed (in litre) per sft");
         scanf("%d", &water_per_sft);
         printf("\n");        
     }
@@ -214,14 +214,16 @@ void water(int land_area, int crop_type)
         int parameter;
         char need[1];
         printf("Enter t for time taken, or c for cost: ");
-        scanf("%s", &need);
+        scanf("%s", need);
         printf("\n");
         if (need[0] == 't')
         {
             printf("Enter the rate of water: ");
             scanf("%d", &parameter);
             printf("\n");
-            printf("The time taken per day is: %d hours", (water_per_sft * land_area) / parameter);
+            printf("%d %d %d \n", water_per_sft, land_area, parameter);
+            float ans = ((water_per_sft * land_area) / parameter);
+            printf("The time taken per day is: %.2f hours", ans);
             printf("\n");
         }
         else if (need[0] == 'c')
@@ -229,7 +231,8 @@ void water(int land_area, int crop_type)
             printf("Enter the cost of water per litre: ");
             scanf("%d", &parameter);
             printf("\n");
-            printf("The total cost taken per day is: %d rupees", (water_per_sft * land_area) * parameter);
+            float ans = (water_per_sft * land_area) * parameter;
+            printf("The total cost taken per day is: %.2f rupees", ans);
             printf("\n");
         }
         else
@@ -270,7 +273,8 @@ void harvest(int land_area, int crop_type)
     if (response[0] == 'y')
     {
         printf("%d", crop_type);
-        int price, seed_price, seed_amount;
+        int price, seed_price; 
+        float seed_amount;
         printf("Enter selling price per ton: ");
         scanf("%d", &price);
         printf("\n");
@@ -292,12 +296,12 @@ void harvest(int land_area, int crop_type)
             seed_amount = 0.7;
             break;
         default:
-            printf("We do not have this crop type in our database, please provide the seed required per sft");
-            scanf("%d", &seed_amount);
+            printf("We do not have this crop type in our database, please provide the seed required (in kg) per sft");
+            scanf("%f", &seed_amount);
             printf("\n");
         }
         // printf("Do you wish to include the cost of supplements");
-        printf("The net profit will be %d.", ((land_area * yield_per_sft * price) - (land_area * seed_amount * seed_price)));
+        printf("The net profit will be %d.", (int)((land_area * yield_per_sft * price) - (land_area * seed_amount * seed_price)));
         printf("\n");
     }
 }
